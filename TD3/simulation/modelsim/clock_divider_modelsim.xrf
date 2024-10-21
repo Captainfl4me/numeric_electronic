@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/lelandais/Documents/1_FormationInitiale/16_SM10/ELECTRONIQUE NUMERIQUE AVANCEE/NEW ADE/TD/Quartus/TD3 - pour élèves/clk_div.vhd
+source_file = 1, C:/Users/lelandais/Documents/1_FormationInitiale/16_SM10/ELECTRONIQUE NUMERIQUE AVANCEE/NEW ADE/TD/Quartus/TD3 - pour élèves/clock_divider.bdf
+source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/lelandais/Documents/1_FormationInitiale/16_SM10/ELECTRONIQUE NUMERIQUE AVANCEE/NEW ADE/TD/Quartus/TD3 - pour élèves/db/clock_divider.cbx.xml
+design_name = hard_block
+design_name = clock_divider
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, clock_divider, 1
+instance = comp, \LEDR[0]~output\, LEDR[0]~output, clock_divider, 1
+instance = comp, \KEY[0]~input\, KEY[0]~input, clock_divider, 1
+instance = comp, \MAX10_CLK1_50~input\, MAX10_CLK1_50~input, clock_divider, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, clock_divider, 1
+instance = comp, \~QUARTUS_CREATED_ADC1~\, ~QUARTUS_CREATED_ADC1~, clock_divider, 1
+instance = comp, \~QUARTUS_CREATED_ADC2~\, ~QUARTUS_CREATED_ADC2~, clock_divider, 1
