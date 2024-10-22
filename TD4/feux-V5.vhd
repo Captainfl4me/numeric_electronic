@@ -3,7 +3,7 @@ Use ieee.std_logic_1164.all ;
 use ieee.numeric_std.all;
 use IEEE.math_real.all;
 
-entity feux is
+entity feux_V5 is
 generic (c_red_duration    : integer := 3;
 			c_orange_duration : integer := 1;
 			c_green_duration  : integer := 2;
@@ -12,7 +12,7 @@ port (clk, raz, pieton : in  std_logic ;  -- horloge, reset, et bouton poussoir
       r,o,v    : out std_logic ) ;		  -- commande des lumières rouge, orange et vert
 end entity;
 
-architecture a1 of feux is
+architecture a1 of feux_V5 is
 
 type statetype is (S_RED, S_GREEN, S_ORANGE);		-- états de la machine d'état 
 signal state : statetype := S_RED;  						-- registre d'état

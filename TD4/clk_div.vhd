@@ -24,9 +24,22 @@ end entity;
 
 
 architecture a1 of clk_div is 
-
-
-	
+	signal clkcnt: integer := 0;
+	signal clkout: std_logic := '0';
+begin
+	process (CLK_IN, RESET) is
+	begin
+		if RESET = '0' then
+			clkcnt <= 0;
+			clkout <= '0';
+		elsif rising_edge(CLK_IN) then
+			if clkcnt = 0 then
+				clkcnt <= facteur - 1;
+				clkout <= not clkout;
+			else
+				clkcnt <= clkcnt - 1;
+			end if;
+		end if;
+	end process;
+	CLK_OUT <= clkout;
 end architecture; 
-
-
